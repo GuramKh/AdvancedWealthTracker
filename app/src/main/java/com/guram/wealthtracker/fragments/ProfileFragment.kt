@@ -27,27 +27,16 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.gkLiTvProfileName.text =
-            getString(R.string.name_guram)
-
-        binding.gkLiTvProfileSurname.text =
-            getString(R.string.surname_khakhutashvili)
-
-        binding.gkLiTvProfileGroup.text =
-            getString(R.string.group_2)
-
-        binding.gkLiTvProfilePrefix.text =
-            getString(R.string.resource_id_prefix_gk_li)
-
-        binding.gkLiTvProfileOrientation.text = getString(R.string.profile_orientation)
-
-        binding.gkLiTvProfileFormula.text = getString(R.string.profile_formula)
-
-        binding.gkLiTvProfileKResult.text = getString(R.string.profile_k_result, String.format(
-            Locale.getDefault(), "%.4f", WealthManager.K))
-
-        binding.gkLiTvProfileSavingsFormula.text =
-            getString(R.string.final_savings_income_expenses_x_k)
+        binding.apply {
+            gkLiTvProfileName.text = getString(R.string.name_guram)
+            gkLiTvProfileSurname.text = getString(R.string.surname_khakhutashvili)
+            gkLiTvProfileGroup.text = getString(R.string.group_2)
+            gkLiTvProfilePrefix.text = getString(R.string.resource_id_prefix_gk_li)
+            gkLiTvProfileOrientation.text = getString(R.string.profile_orientation)
+            gkLiTvProfileFormula.text = getString(R.string.profile_formula)
+            gkLiTvProfileKResult.text = getString(R.string.profile_k_result, String.format(Locale.getDefault(), "%.4f", WealthManager.K))
+            gkLiTvProfileSavingsFormula.text = getString(R.string.final_savings_income_expenses_x_k)
+        }
     }
 
     override fun onDestroyView() {

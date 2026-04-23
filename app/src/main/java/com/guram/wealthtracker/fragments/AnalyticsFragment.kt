@@ -58,17 +58,22 @@ class AnalyticsFragment : Fragment() {
         val savingsRate = WealthManager.calculateSavingsRate(income, expenses)
         val status = WealthManager.getFinancialStatus(income, expenses)
 
-        binding.gkLiTvIncomeResult.text = getString(R.string.analytics_income, fmt.format(income))
-        binding.gkLiTvExpensesResult.text = getString(R.string.analytics_expenses, fmt.format(expenses))
-        binding.gkLiTvNetBalance.text = getString(R.string.analytics_net_balance, fmt.format(netBalance))
-        binding.gkLiTvFinalSavings.text = getString(R.string.analytics_final_savings, fmt.format(finalSavings))
-        binding.gkLiTvSavingsRate.text = getString(R.string.analytics_savings_rate, String.format(
-            Locale.getDefault(), "%.1f", savingsRate))
-        binding.gkLiTvStatus.text = status
+        binding.apply {
+            gkLiTvIncomeResult.text = getString(R.string.analytics_income, fmt.format(income))
+            gkLiTvExpensesResult.text = getString(R.string.analytics_expenses, fmt.format(expenses))
+            gkLiTvNetBalance.text = getString(R.string.analytics_net_balance, fmt.format(netBalance))
+            gkLiTvFinalSavings.text = getString(R.string.analytics_final_savings, fmt.format(finalSavings))
+            gkLiTvSavingsRate.text = getString(R.string.analytics_savings_rate, String.format(
+                Locale.getDefault(), "%.1f", savingsRate))
+            gkLiTvStatus.text = status
+        }
 
         val colorRes = if (netBalance >= 0) R.color.surplus_green else R.color.deficit_red
         val color = ContextCompat.getColor(requireContext(), colorRes)
-        binding.gkLiTvFinalSavings.setTextColor(color)
-        binding.gkLiTvStatus.setTextColor(color)
+
+        binding.apply {
+            gkLiTvFinalSavings.setTextColor(color)
+            gkLiTvStatus.setTextColor(color)
+        }
     }
 }

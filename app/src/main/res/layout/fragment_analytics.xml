@@ -7,19 +7,18 @@
     android:padding="24dp"
     android:background="@color/background">
 
-    <!-- Title -->
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/gk_li_tv_analytics_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/analytics_title"
+        android:textColor="@color/on_surface"
         android:textSize="22sp"
         android:textStyle="bold"
-        android:textColor="@color/primary"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/gk_li_divider_analytics"
@@ -31,7 +30,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- K coefficient (always visible) -->
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/gk_li_tv_k_value"
         android:layout_width="0dp"
@@ -45,7 +43,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Placeholder shown until data arrives -->
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/gk_li_tv_placeholder"
         android:layout_width="0dp"
@@ -59,7 +56,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Result rows (hidden until data arrives) -->
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/gk_li_tv_income_result"
         android:layout_width="0dp"
@@ -114,7 +110,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Final Savings — highlighted -->
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/gk_li_tv_final_savings"
         android:layout_width="0dp"
@@ -126,7 +121,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Status badge -->
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/gk_li_tv_status"
         android:layout_width="0dp"

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Advanced Wealth Tracker</string>
+    <string name="tab_input">Input</string>
+    <string name="tab_analytics">Analytics</string>
+    <string name="tab_profile">Profile</string>
+
+    <!-- Analytics -->
+    <string name="analytics_placeholder">Enter values on the Input tab and press\n"Calculate and Save" to see results here.</string>
+    <string name="analytics_k_value">K = (5 + 11) / 30 = %1$s</string>
+    <string name="analytics_income">Income: %1$s GEL</string>
+    <string name="analytics_expenses">Expenses: %1$s GEL</string>
+    <string name="analytics_net_balance">Net Balance: %1$s GEL</string>
+    <string name="analytics_final_savings">Final Savings (x K): %1$s GEL</string>
+    <string name="analytics_savings_rate">Savings Rate: %1$s%%</string>
+
+    <!-- Input -->
+    <string name="hint_income">e.g. 3500.00</string>
+    <string name="hint_expenses">e.g. 2000.00</string>
+    <string name="btn_calculate">Calculate and Save</string>
+    <string name="swipe_hint">Swipe down to see Analytics</string>
+
+    <!-- Labels -->
+    <string name="label_income">Monthly Income (GEL)</string>
+    <string name="label_expenses">Monthly Expenses (GEL)</string>
+    <string name="input_title">Financial Input</string>
+    <string name="analytics_title">Analytics</string>
+    <string name="profile_title">Profile</string>
+    <string name="name_guram">Name: Guram</string>
+    <string name="surname_khakhutashvili">Surname: Khakhutashvili</string>
+    <string name="group_2">Group: 2</string>
+    <string name="resource_id_prefix_gk_li">Resource ID prefix: gk_li_</string>
+    <string name="final_savings_income_expenses_x_k">Final Savings = (Income - Expenses) x K</string>
+    <string name="profile_orientation">ViewPager2 Orientation: VERTICAL\n(Surname starts with \'K\' - consonant)</string>
+    <string name="profile_k_result">K = %1$s</string>
+    <string name="profile_formula">K = (Name letters + Surname letters) / Birth day\nK = (5 + 11) / 30\nK = 16 / 30</string>
+</resources>
